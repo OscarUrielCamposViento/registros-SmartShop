@@ -13,19 +13,14 @@
                             <form action="{{url('/Registros') }}" method='post'>
                                 @csrf
 
-
-
-
-
-                            
                                 <div class="row p-2 form-group">
                                     <div class="col p-2" >
                                         <label for="Fecha">Fecha </label>
-                                        <input name="Fecha" type="date" id="Fecha" class="form-control border"  style="text-align:center;" require value={{$currentDate}}>
+                                        <input name="Fecha" type="date" id="Fecha" class="form-control border"  style="text-align:center;" value="{{$currentDate}}">
                                     </div>
                                     <div class="col p-2" >
                                         <label for="Hora">Hora</label>
-                                        <input name="Hora" type="time"  id="Hora"  class="form-control border"  style="text-align:center;" require value={{$currentTime}}>
+                                        <input name="Hora" type="time"  id="Hora"  class="form-control border"  style="text-align:center;" value="{{$currentTime}}">
                                     </div>
                                 </div>
 
@@ -90,6 +85,12 @@
                                 <div>
                                     <button type="submit" class="p-2 btn btn-primary">Enviar</button>
                                 </div>
+
+
+
+
+                            
+                                
                                 
                             </form>
                         </div>

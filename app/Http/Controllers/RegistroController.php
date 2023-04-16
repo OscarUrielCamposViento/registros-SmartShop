@@ -16,7 +16,7 @@ class RegistroController extends Controller
     {
         $datos['registros']=Registro::paginate(5);
         
-        return view('Registro.Registros', $datos );
+        return view('Registro.RegistrosIndex', $datos );
     }
 
     /**
@@ -28,10 +28,11 @@ class RegistroController extends Controller
     {
         $now = Carbon::now()->addHour(-1);
         $currentDate = $now->format (format: 'Y-m-d');
-        $currentTime = $now->format (format:'H:i');
+        $currentTime = $now->format (format:'h:i');
+
         
-        
-        return view('Registro.RegistrosForm') -> with (compact('now','currentDate','currentTime'));
+          
+        return view('Registro.RegistrosCreate') -> with (compact('now','currentDate','currentTime'));
 
     }
 
@@ -66,9 +67,11 @@ class RegistroController extends Controller
      * @param  \App\Models\Registro  $registro
      * @return \Illuminate\Http\Response
      */
-    public function edit(Registro $registro)
+    public function edit($id)
     {
         //
+        $registro=Registro::findOrFail($id);
+        return view('Registro.RegistrosEdit', compact('registro') );
     }
 
     /**
@@ -78,9 +81,14 @@ class RegistroController extends Controller
      * @param  \App\Models\Registro  $registro
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Registro $registro)
+    public function update(Request $request, $id)
     {
         //
+        $datosRegistro = request() -> except(['_token','_method']);
+        Registro::where('id','=',$id) -> update($datosRegistro);
+
+        $registro=Registro::findOrFail($id);
+        return view('Registro.RegistrosEdit', compact('registro') );
     }
 
     /**
@@ -89,8 +97,10 @@ class RegistroController extends Controller
      * @param  \App\Models\Registro  $registro
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Registro $registro)
+    public function destroy($id)
     {
         //
+        Registro::destroy($id);
+        return redirect('Registros');
     }
 }

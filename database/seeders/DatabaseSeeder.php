@@ -21,6 +21,6 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@material.com',
             'password' => ('secret')
         ]);
-        Registro::factory(100)->create();
+        Registro::factory(1000)->create();
     }
 }

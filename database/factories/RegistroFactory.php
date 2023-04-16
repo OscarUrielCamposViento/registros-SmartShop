@@ -20,8 +20,8 @@ class RegistroFactory extends Factory
             //
 
 
-            'fecha' => $this -> faker -> date('Y_m_d'),
-            'hora' => $this -> faker -> time('H_i_s'),
+            'fecha' => $this -> faker -> date('Y-m-d'),
+            'hora' => $this -> faker -> time('h:i'),
 
             //datos del cliente
             'cliente' => $this -> faker -> name(),
