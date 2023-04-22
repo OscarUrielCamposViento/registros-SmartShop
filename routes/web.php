@@ -37,6 +37,7 @@ use App\Http\Controllers\SessionsController;
             
 
 Route::get('/', function () {return redirect('sign-in');})->middleware('guest');
+//Route::get('/Registros', [RegistroController::class, 'index'])->middleware('auth')->name('dashboard');
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth')->name('dashboard');
 Route::get('sign-up', [RegisterController::class, 'create'])->middleware('guest')->name('register');
 Route::post('sign-up', [RegisterController::class, 'store'])->middleware('guest');
@@ -99,6 +100,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 */
 
+	
 	route::resource('Registros',RegistroController::class);
 });
 

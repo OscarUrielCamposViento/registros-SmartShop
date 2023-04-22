@@ -12,11 +12,25 @@ class RegistroController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $datos['registros']=Registro::paginate(5);
         
-        return view('Registro.RegistrosIndex', $datos );
+        /*echo $request->buscar;*/
+        $buscar = $request->buscar;
+        
+        
+        $registros=Registro::where('id','like','%'.$buscar.'%')
+                ->orwhere('cliente','like','%'.$buscar.'%')
+                
+                ->paginate(5);
+                $registros->withPath("Registros?buscar=".$buscar);
+        $data = [
+            'registros' => $registros,
+            'buscar' =>$buscar,
+        ];
+        return view('Registro.RegistrosIndex',$data);
+
+        
     }
 
     /**
@@ -56,9 +70,11 @@ class RegistroController extends Controller
      * @param  \App\Models\Registro  $registro
      * @return \Illuminate\Http\Response
      */
-    public function show(Registro $registro)
+    public function show($id)//public function show(Registro $registro)
     {
         //
+        $data=Registro::findOrFail($id);
+        return view('Registro.PDF', compact('data') );
     }
 
     /**
@@ -73,6 +89,7 @@ class RegistroController extends Controller
         $registro=Registro::findOrFail($id);
         return view('Registro.RegistrosEdit', compact('registro') );
     }
+    
 
     /**
      * Update the specified resource in storage.
