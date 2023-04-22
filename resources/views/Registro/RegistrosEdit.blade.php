@@ -14,7 +14,7 @@
                                 @csrf
                                 {{ method_field('PATCH') }}
 
-                                @include('Registro.Form');
+                                @include('Registro.Form')
                                 
                             </form>
                         </div>

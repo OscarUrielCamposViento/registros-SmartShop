@@ -101,9 +101,7 @@
     </div>
     <br>
 
-    <div>
-        <button type="submit" class="p-2 btn btn-primary">Enviar</button>
-    </div>
+   
 
 
 
@@ -114,18 +112,7 @@
 
 
 
-<!--
 
-    <div class="row p-2 form-group">
-        <div class="col p-2" >
-            <label for="Fecha">Fecha </label>
-            <input name="Fecha" type="date" id="Fecha" class="form-control border"  style="text-align:center;" value="">
-        </div>
-        <div class="col p-2" >
-            <label for="Hora">Hora</label>
-            <input name="Hora" type="time"  id="Hora"  class="form-control border"  style="text-align:center;" value="">
-        </div>
-    </div>
 
 
     <h2>Datos del cliente</h2>
@@ -188,6 +175,3 @@
     <div>
         <button type="submit" class="p-2 btn btn-primary">Enviar</button>
     </div>
-
-
--->

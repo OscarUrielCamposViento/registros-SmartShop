@@ -21,10 +21,23 @@
                                         <tr>
                                             
                                             <th class="text-white text-capitalize ps-3">Registros</th>
-                                            <th colspan="1" class=" w-50 p-3">
+                                            
+                                            
+                                            <th class="text-end px-5 ">
+                                                <a class="btn bg-gradient-success text-xs" 
+                                                    href="{{ url('Registros/create') }}">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                    </svg>
+                                                     Nuevo Registro
+                                                </a>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2" class=" w-50 px-0">
                                             
 
-                                                <form action=" {{route('Registros.index')}} " method="GET" class="input-group rounded  p-0">
+                                                <form action=" {{route('Registros.index')}} " method="GET" class="input-group rounded  px-5">
                                                     <input name="buscar" value="{{$buscar}}" type="search" class=" btn bg-light form-control rounded pe-4" placeholder="   Buscar" aria-label="  Buscar"  />
                                                     
                                                     <button type="submit" class=" btn btn-light" >
@@ -36,16 +49,6 @@
                                                 </form>
 
   
-                                            </th>
-                                            
-                                            <th class="text-end px-5 ">
-                                                <a class="btn bg-gradient-success text-xs" 
-                                                    href="{{ url('Registros/create') }}">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                    </svg>
-                                                     Nuevo Registro
-                                                </a>
                                             </th>
                                         </tr>
                                     </table>
@@ -63,10 +66,11 @@
                                             <tr>
                                                 <a  href="{{$registros->previousPageUrl()}}"
                                                     class="btn bg-gradient-primary w-30 my-4 mb-2"> 
-                                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
                                                             <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
                                                         </svg>
-                                                        pagina anterior
+                                                        Pag.Anterior
+                                                        
                                                 </a>
                                             </tr>
                                             <tr>                                            
@@ -77,8 +81,8 @@
                                             <tr>
                                                 <a  href="{{$registros->nextPageUrl()}}"
                                                     class="btn bg-gradient-primary w-30 my-4 mb-2"> 
-                                                            pagina siguiente
-                                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                            Pag.Siguente 
+                                                            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
                                                                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                                                             </svg>
                                                 </a>
@@ -196,10 +200,11 @@
                                             <tr>
                                                 <a  href="{{$registros->previousPageUrl()}}"
                                                     class="btn bg-gradient-primary w-30 my-4 mb-2"> 
-                                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
                                                             <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
                                                         </svg>
-                                                        pagina anterior
+                                                        Pag.Anterior
+                                                        
                                                 </a>
                                             </tr>
                                             <tr>                                            
@@ -210,13 +215,14 @@
                                             <tr>
                                                 <a  href="{{$registros->nextPageUrl()}}"
                                                     class="btn bg-gradient-primary w-30 my-4 mb-2"> 
-                                                            pagina siguiente
-                                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                            Pag.Siguente 
+                                                            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
                                                                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                                                             </svg>
                                                 </a>
                                             </tr>
-                                        </td>     
+                                        </td>
+                                        
                                     </table>
                                     <!-- End Paginate -->
                                     

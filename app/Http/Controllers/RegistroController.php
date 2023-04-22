@@ -61,7 +61,9 @@ class RegistroController extends Controller
         //$datosRegistro = request() -> all();
         $datosRegistro = request() -> except('_token');
         Registro::insert($datosRegistro);
-        return response() -> json($datosRegistro);
+        //return response() -> json($datosRegistro);
+        //return view('Registro.RegistrosIndex');
+        return redirect('/Registros');
     }
 
     /**

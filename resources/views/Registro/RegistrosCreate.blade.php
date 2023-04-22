@@ -83,7 +83,7 @@
                                 <br>
 
                                 <div>
-                                    <button type="submit" class="p-2 btn btn-primary">Enviar</button>
+                                    <button type="submit" class="p-2 btn btn-primary" onclick="return confirm('¿La informacion enviada es correcta?')">Enviar</button>
                                 </div>
 
 
