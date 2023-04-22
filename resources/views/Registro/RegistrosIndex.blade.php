@@ -4,13 +4,12 @@
         <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
             <!-- Navbar -->
             <x-navbars.navs.auth titlePage="Registros"></x-navbars.navs.auth>
-            
             <!-- End Navbar -->
+
+
             <div class="container-fluid py-4">
                 <div class="row">
                     <div class="col-12">
-
-
 
 
                         <div class="card my-4">
@@ -50,6 +49,8 @@
                                             </th>
                                         </tr>
                                     </table>
+
+
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-2">
@@ -88,7 +89,7 @@
                                     <!-- End Paginate -->
 
 
-
+                                    <!-- tabla de la informacion de los registros -->
                                     <table class="table align-items-center mb-0">
                                         <thead>
                                             <tr>
@@ -178,20 +179,15 @@
 
                                                         </tr>
                                                     </table>
-                                                   
-                                                    
+                                                                                                       
                                                 </td>
                                             </tr>
                                             @endforeach
-                                                                               
-                                           
+  
                                         </tbody>
                                     </table>
+                                    <!-- End tabla de la informacion de los registros -->
                                 
-
-
-
-
 
 
                                     <!-- Paginate -->
@@ -200,17 +196,17 @@
                                             <tr>
                                                 <a  href="{{$registros->previousPageUrl()}}"
                                                     class="btn bg-gradient-primary w-30 my-4 mb-2"> 
-                                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
-                                                            </svg>
-                                                            pagina anterior
+                                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                                        </svg>
+                                                        pagina anterior
                                                 </a>
                                             </tr>
                                             <tr>                                            
                                                     {{ $registros->currentPage()}} 
                                                     /
-                                                    {{$registros->lastPage()}}   
-                                            </tr>
+                                                    {{$registros->lastPage()}} 
+                                            </tr>      
                                             <tr>
                                                 <a  href="{{$registros->nextPageUrl()}}"
                                                     class="btn bg-gradient-primary w-30 my-4 mb-2"> 
@@ -220,22 +216,13 @@
                                                             </svg>
                                                 </a>
                                             </tr>
-                                        </td>
+                                        </td>     
                                     </table>
                                     <!-- End Paginate -->
                                     
                                 </div>
 
-
-
-                                
-
-
-
-
-
-
-                                    
+   
                                 <div class="px-2 text-end">
                                         <a class="btn bg-gradient-success text-xs" 
                                             href="{{ url('Registros/create') }}">
@@ -248,6 +235,7 @@
 
                             </div>
                         </div>
+
                     </div>
                 </div>
                 
