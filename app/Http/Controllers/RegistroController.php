@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+
+use Barryvdh\DomPDF\Facade\Pdf as PDF; 
+
 use Illuminate\Http\Request;
 use App\Models\Registro;
 use Carbon\Carbon;
@@ -74,9 +77,17 @@ class RegistroController extends Controller
      */
     public function show($id)//public function show(Registro $registro)
     {
+        
+        $data = Registro::findOrFail($id);
+        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true])->loadView('Registro.PDF',['data'=>$data]);
+        return $pdf->stream();
+        
+    
         //
+        /*
         $data=Registro::findOrFail($id);
         return view('Registro.PDF', compact('data') );
+        */
     }
 
     /**

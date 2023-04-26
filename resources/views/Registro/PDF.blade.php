@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    
+    <!--link rel="stylesheet" href="/assets/css/PDF.css"  type="text/css"-->
 </head>
 <body>
-{{$data}}
-    <div class="hoja">
+
+    <div >
         <div class="contenido">
             <h3>Smart Shop Reparaciones y Accesorios</h3>
             <h4>Calle 19 entre 22 y 24, Telchac Pueblo, Yucatán C.P. 97400</h4>
@@ -129,7 +133,7 @@
                     <td class="td2"><p>C.C. U OTROS</p></td>
                 </tr>
             </table>
-            <br><br><br>
+            <br><br><br><br>
             <table class="tabla3">
                 <tr>
                     <td class="td3">FIRMA CLIENTE</td>
@@ -138,51 +142,51 @@
                 </tr>
             </table>
         </div>
-
-            
-        
-
-
-
-
     </div>
-    {{url('imagenes\logo_smartShop.png')}}
-    <br>
+    <img src="{{public_path().'imagenes/logo_smartShop.png'}}" alt="" width="100" height="100">
+    <!--img src="{{asset('imagenes/logo_smartShop.png')}}" alt=""-->
 
-    <img src="{{url('imagenes\logo_smartShop.png')}}">
-    
-    <div class="qlito">
-ddddddddddddddddd
-    </div>
+    <img src="{{ base_path() }}./public/imagenes/logo_smartShop.png" />
+
+{{base_path()}}/public/imagenes/logo_smartShop.png
+
+    <style type="text/css">
+
+
+
+    body { margin: 0px; 
+        /*background-image: url("{{asset('imagenes/logo_smartShop.png')}}");*/
+        background-image: url(src="{{ base_path() }}./public/imagenes/logo_smartShop.png");
+        background-repeat: no-repeat; 
+        background-position: center; }
     
 
-<style>
-.qlito{
-    background:red;
-    background-image: url('{{url('imagenes\logo_smartShop.png')}}');
-}
     .hoja {
-        background:red;
+        /*background:red;*/
         width: 793.7008874px;
         height: 1122.5198265px;
-        background-image: url("{{url('imagenes\logo_smartShop.png')}}");
+        
+        
     
-    /*background:red;*/
+        
     }
+
     .contenido{
-        padding: 0  50px;
+        
         text-align: center;
     }
+
     .texto{
         text-align:left;
     }
+
     .textoP{
-        font-size:13px;
+        font-size:12px;
         padding: 5px;
         margin: 4px;
     }
 
-    t{
+    .t{
         text-decoration-line: underline;
     }
 
@@ -196,12 +200,12 @@ ddddddddddddddddd
         width: 693.7008874px;
     }
     .tabla2{
-        text:center;
+        text-align:center;
         border-collapse: collapse;
         width: 693.7008874px;    
     }
     .tabla3{
-        width: 693.7008874px;
+        width: 500px;
         
         
     }
@@ -212,13 +216,13 @@ ddddddddddddddddd
         text-align: center;
     }
     .td3{
-        width: 346.8504437px;
+        width: 300px;
         padding: 0px;
         border-top: black 1px solid;
         text-align: center;
     }
     .td3Nul{
-        width: 346.8504437px;
+        width: 100px;
         padding: 0px;
         border: black 0px solid;
         text-align: center;
@@ -233,7 +237,17 @@ ddddddddddddddddd
         margin: 0px;
     }
 
-</style>
+
+
+
+
+
+
+
+
+
+    </style>
+              
 
 </body>
 </html>

@@ -1,0 +1,73 @@
+
+    .hoja {
+        background:red;
+        width: 793.7008874px;
+        height: 1122.5198265px;
+        background-image: url("{{url('imagenes\logo_smartShop.png')}}");
+    
+    /*background:red;*/
+    }
+    .contenido{
+        padding: 0  50px;
+        text-align: center;
+    }
+    .texto{
+        text-align:left;
+    }
+    .textoP{
+        font-size:13px;
+        padding: 5px;
+        margin: 4px;
+    }
+
+    .t{
+        text-decoration-line: underline;
+    }
+
+    p{
+        font-size:13px;
+        padding: 0px;
+        margin: 4px;
+    }
+    .tabla1{
+        /*background:blue;*/
+        width: 693.7008874px;
+    }
+    .tabla2{
+        text-align:center;
+        border-collapse: collapse;
+        width: 693.7008874px;    
+    }
+    .tabla3{
+        width: 693.7008874px;
+        
+        
+    }
+    
+    .td2{
+        padding: 0px;
+        border: black 1px solid;
+        text-align: center;
+    }
+    .td3{
+        width: 346.8504437px;
+        padding: 0px;
+        border-top: black 1px solid;
+        text-align: center;
+    }
+    .td3Nul{
+        width: 346.8504437px;
+        padding: 0px;
+        border: black 0px solid;
+        text-align: center;
+
+    }
+    td{
+        padding: 0px;
+    }
+    tr{
+        padding: 0px;
+        text-align:left;
+        margin: 0px;
+    }
+

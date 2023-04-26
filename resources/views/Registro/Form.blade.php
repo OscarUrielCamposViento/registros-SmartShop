@@ -1,7 +1,7 @@
     
     <div class="row p-2 form-group">
         <div class="col p-2" >
-            <label for="Fecha">Fecha </label>{{$registro->fecha}}
+            <label for="Fecha">Fecha </label>
             <input name="Fecha" type="date" id="Fecha" class="form-control border"  style="text-align:center;" value="{{$registro->fecha}}">
         </div>
         <div class="col p-2" >
