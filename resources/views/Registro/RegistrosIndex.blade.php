@@ -60,7 +60,7 @@
                                 <div class="table-responsive p-0 text-center">
 
 
-                                    <!-- Paginate -->
+                                <!-- Paginate -->
                                     <table class="table-borderless">
                                         <td>
                                             <tr>
@@ -69,7 +69,7 @@
                                                         <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
                                                             <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
                                                         </svg>
-                                                        Pag.Anterior
+                                                        Pagina Anterior
                                                         
                                                 </a>
                                             </tr>
@@ -81,7 +81,7 @@
                                             <tr>
                                                 <a  href="{{$registros->nextPageUrl()}}"
                                                     class="btn bg-gradient-primary w-30 my-4 mb-2"> 
-                                                            Pag.Siguente 
+                                                            Pagina Siguente 
                                                             <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
                                                                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                                                             </svg>
@@ -90,7 +90,7 @@
                                         </td>
                                         
                                     </table>
-                                    <!-- End Paginate -->
+                                <!-- End Paginate -->
 
 
                                     <!-- tabla de la informacion de los registros -->
@@ -203,7 +203,7 @@
                                                         <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
                                                             <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
                                                         </svg>
-                                                        Pag.Anterior
+                                                        Pagina Anterior
                                                         
                                                 </a>
                                             </tr>
@@ -215,7 +215,7 @@
                                             <tr>
                                                 <a  href="{{$registros->nextPageUrl()}}"
                                                     class="btn bg-gradient-primary w-30 my-4 mb-2"> 
-                                                            Pag.Siguente 
+                                                            Pagina Siguente 
                                                             <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
                                                                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                                                             </svg>

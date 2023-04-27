@@ -4,9 +4,9 @@
         <div class="container position-sticky z-index-sticky top-0">
             <div class="row">
                 <div class="col-12">
-                    <!-- Navbar -->
+                    <!-- Navbar 
                     <x-navbars.navs.guest signin='login' signup='register'></x-navbars.navs.guest>
-                    <!-- End Navbar -->
+                     End Navbar -->
                 </div>
             </div>
         </div>
@@ -54,14 +54,7 @@
                                             @error('password')
                                             <p class='text-danger inputerror'>{{ $message }} </p>
                                             @enderror
-                                            <div class="form-check form-check-info text-start ps-0 mt-3">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault" checked>
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    I agree the <a href="javascript:;"
-                                                        class="text-dark font-weight-bolder">Terms and Conditions</a>
-                                                </label>
-                                            </div>
+                                            
                                             <div class="text-center">
                                                 <button type="submit"
                                                     class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Sign

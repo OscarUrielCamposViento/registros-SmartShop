@@ -143,13 +143,19 @@
             </table>
         </div>
     </div>
+
+<!--
     <img src="{{public_path().'imagenes/logo_smartShop.png'}}" alt="" width="100" height="100">
-    <!--img src="{{asset('imagenes/logo_smartShop.png')}}" alt=""-->
+    <img src="{{asset('imagenes/logo_smartShop.png')}}" alt="">
 
     <img src="{{ base_path() }}./public/imagenes/logo_smartShop.png" />
 
 {{base_path()}}/public/imagenes/logo_smartShop.png
 
+-->
+    
+    
+    
     <style type="text/css">
 
 

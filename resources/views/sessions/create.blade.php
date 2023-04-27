@@ -3,9 +3,9 @@
         <div class="container position-sticky z-index-sticky top-0">
             <div class="row">
                 <div class="col-12">
-                    <!-- Navbar -->
+                    <!-- Navbar 
                     <x-navbars.navs.guest signin='login' signup='register'></x-navbars.navs.guest>
-                    <!-- End Navbar -->
+                     End Navbar -->
                 </div>
             </div>
         </div>
@@ -20,11 +20,14 @@
                                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                                     <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
                                         <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Sign in</h4>
+                                        <!--
                                         <div class="row mt-3">
+                                            
                                             <h6 class='text-white text-center'>
                                                 <span class="font-weight-normal">Email:</span> admin@material.com
                                                 <br>
                                                 <span class="font-weight-normal">Password:</span> secret</h6>
+                                            
                                             <div class="col-2 text-center ms-auto">
                                                 <a class="btn btn-link px-3" href="javascript:;">
                                                     <i class="fa fa-facebook text-white text-lg"></i>
@@ -41,6 +44,7 @@
                                                 </a>
                                             </div>
                                         </div>
+                                        -->
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -64,16 +68,12 @@
                                         @enderror
                                         <div class="input-group input-group-outline mt-3">
                                             <label class="form-label">Password</label>
-                                            <input type="password" class="form-control" name="password" value='{{ 'secret'}}'>
+                                            <input type="password" class="form-control" name="password" value="{{ '*******' }}">
                                         </div>
                                         @error('password')
                                         <p class='text-danger inputerror'>{{ $message }} </p>
                                         @enderror
-                                        <div class="form-check form-switch d-flex align-items-center my-3">
-                                            <input class="form-check-input" type="checkbox" id="rememberMe">
-                                            <label class="form-check-label mb-0 ms-2" for="rememberMe">Remember
-                                                me</label>
-                                        </div>
+                                        
                                         <div class="text-center">
                                             <button type="submit" class="btn bg-gradient-primary w-100 my-4 mb-2">Sign
                                                 in</button>
